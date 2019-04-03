@@ -1,0 +1,8 @@
+AuthName "Private zone. Only for administrator!"
+AuthType Basic
+AuthUserFile /home/notychweb/web/notych.pp.ua/public_html/admin/.htpasswd
+require valid-user
+<Files .htpasswd>
+   deny from all
+</Files>
+php_value error_reporting E_ALL
